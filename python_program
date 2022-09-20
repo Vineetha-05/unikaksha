@@ -1,0 +1,34 @@
+# merging and sorting the arrays
+
+
+x=int(input())
+a=[]
+b=[]
+for i in range(0,x):
+    temp=int(input())
+    a.append(temp)
+y=int(input())
+for j in range(0,y):
+    index=int(input())
+    b.append(index)
+c=[]
+c=a+b
+c.sort()
+print("sorted list is",c)
+
+
+# factorials in range
+
+
+x=int(input())
+y=int(input())
+
+for i in range(x,y+1):
+    count=0
+    for j in range(1,i+1):
+        if i%j==0:
+            count=count+1
+    if count==2:
+        print(i,end=' ')
+
+        
